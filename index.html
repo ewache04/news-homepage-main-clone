@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Metadata for document -->
+    <meta charset="UTF-8"> <!-- Character encoding for the document -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ensures responsive design -->
+    <meta name="author" content="Jeremiah E. Ochepo"> <!-- Author of the webpage -->
+    <meta name="publish_date" content="2024-10-17"> <!-- Date the page was published -->
+    <meta name="update_date" content="2024-10-17"> <!-- Date the page was last updated -->
+
+    <!-- Favicon icon in the browser tab -->
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+    
+    <!-- Bootstrap CSS for responsive layout and styling -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <!-- Google fonts for custom typography -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+    
+    <title>Frontend Mentor | News Homepage</title> <!-- Page title -->
+
+    <!-- Inline CSS for attribution -->
+    <style>
+        .attribution {
+            font-size: 11px; /* Font size for attribution text */
+            text-align: center; /* Center the attribution */
+        }
+
+        .attribution a {
+            color: hsl(228, 45%, 44%); /* Color for attribution links */
+        }
+    </style>
+
+    <!-- External stylesheet for additional styling -->
+    <link rel="stylesheet" href="./static/css/styles.css">
+
+    <!-- jQuery and Bootstrap JS for interactive components -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60"> <!-- Scrollspy for navbar scrolling -->
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-default navbar-fixed-top"> <!-- Fixed navbar at the top -->
+        <div class="nav-container">
+            <div class="navbar-header">
+                <!-- Toggle button for small screens -->
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span> <!-- Hamburger menu icon -->
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <!-- Branding (logo) -->
+                <a class="navbar-brand" href="../news-homepage-main-clone/index.html" style="color: black;">w.</a>
+            </div>
+            <!-- Collapsible navigation links -->
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right"> <!-- Navbar items aligned to the right -->
+                    <li><a href="../news-homepage-main-clone/index.html">Home</a></li>
+                    <li><a href="#">New</a></li>
+                    <li><a href="#">Popular</a></li>
+                    <li><a href="#">Trending</a></li>
+                    <li><a href="#">Categories</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Spacer for the navbar -->
+    <br><br>
+
+    <!-- Main content and sidebar container -->
+    <div class="row container-fluid">
+        <!-- Main content area -->
+        <div class="col-sm-9">
+            <!-- Main image -->
+            <div class="image-web-3">
+                <img src="assets/images/image-web-3-desktop.jpg" alt="Web 3.0 Image" style="width: 100%; height: auto;">
+            </div>
+            <br>
+            
+            <!-- Headline and description -->
+            <div class="row">
+                <div class="col-sm-6">
+                    <h1>The Bright <br> Future of <br> Web 3.0?</h1>
+                </div>
+                <div class="col-sm-6">
+                    <p>We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. But is it really fulfilling its promise?</p>
+                    <br>
+                    <a href="#" class="read-more-text">Read more</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Spacer for mobile view -->
+        <br class="show-on-mobile">
+
+        <!-- Sidebar for new articles (Mobile View) -->
+        <div class="col-sm-3 show-on-mobile" style="background-color: hwb(240 0% 96%); color: white; margin: 14px;">
+            <div>
+                <h4 style="color: orange; padding-top: 15px;">New</h4>
+                <h5>Hydrogen vs. Electric Cars</h5>
+                <p style="color: rgb(148, 147, 147);">Will hydrogen-fueled cars ever catch up to EVs?</p>
+            </div>
+            <hr>
+            <div>
+                <h5>The Downsides of AI Artistry</h5>
+                <p style="color: rgb(148, 147, 147);">What are the possible adverse effects of on-demand AI image generation?</p>
+            </div>
+            <hr>
+            <div>
+                <h5>Is VC Funding Drying Up?</h5>
+                <p style="color: rgb(148, 147, 147);">Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+            </div>
+        </div>
+
+        <!-- Sidebar for new articles (Desktop View) -->
+        <div class="col-sm-3 hide-on-mobile" style="background-color: rgb(1, 1, 37); color: white;">
+            <div>
+                <h4 style="color: orange; padding-top: 15px;">New</h4>
+                <h5>Hydrogen vs. Electric Cars</h5>
+                <p style="color: rgb(148, 147, 147);">Will hydrogen-fueled cars ever catch up to EVs?</p>
+            </div>
+            <hr>
+            <div>
+                <h5>The Downsides of AI Artistry</h5>
+                <p style="color: rgb(148, 147, 147);">What are the possible adverse effects of on-demand AI image generation?</p>
+            </div>
+            <hr>
+            <div>
+                <h5>Is VC Funding Drying Up?</h5>
+                <p style="color: rgb(148, 147, 147);">Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+            </div>
+        </div>
+    </div>
+    <br class="hide-on-mobile">
+
+    <!-- Featured articles section -->
+    <div class="row featured-articles" style="margin: 14px;">
+        <!-- First featured article -->
+        <div class="col-sm-4">
+            <div class="image-container">
+                <div class="featured-image">
+                    <img src="assets/images/image-retro-pcs.jpg" alt="Reviving Retro PCs" class="featured-image small-image">
+                </div>
+                <div class="featured-text">
+                    <h4>01</h4>
+                    <h5>Reviving Retro PCs</h5>
+                    <p>What happens when old PCs are given modern upgrades?</p>
+                </div>
+            </div>
+        </div>
+        <!-- Second featured article -->
+        <div class="col-sm-4 featured-article">
+            <div class="image-container">
+                <div class="featured-image">
+                    <img src="assets/images/image-top-laptops.jpg" alt="Top Laptops of 2022" class="featured-image small-image">
+                </div>
+                <div class="featured-text">
+                    <h4>02</h4>
+                    <h5>Top 10 Laptops of 2022</h5>
+                    <p>Our best picks for various needs and budgets.</p>
+                </div>
+            </div>
+        </div>
+        <!-- Third featured article -->
+        <div class="col-sm-4 featured-article">
+            <div class="image-container">
+                <div class="featured-image">
+                    <img src="assets/images/image-gaming-growth.jpg" alt="Growth of Gaming" class="featured-image small-image">
+                </div>
+                <div class="featured-text">
+                    <h4>03</h4>
+                    <h5>The Growth of Gaming</h5>
+                    <p>How the pandemic has sparked fresh opportunities.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Attribution Section -->
+    <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+        Coded by <a href="#">Jeremiah E. Ochepo</a>.
+    </div>
+
+    <!-- External JavaScript file -->
+    <script src="./static/js/script.js"></script>
+</body>
