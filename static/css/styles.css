@@ -1,0 +1,266 @@
+/* 
+ * Reset default browser styles 
+ * Ensures consistent rendering across different browsers by resetting margins, padding, and box-sizing.
+ */
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Includes padding and border in element's total width and height */
+}
+
+/* 
+ * Global Styles for the body 
+ * Sets the default font, size, line spacing, and text color for the entire page.
+ */
+body {
+    font-family: 'Inter', sans-serif; /* Font for the entire document */
+    font-size: 15px; /* Base font size for body text */
+    line-height: 1.8; /* Line spacing for better readability */
+    color: #818181; /* Default gray color for text */
+}
+
+/* 
+ * Heading Styles 
+ * Custom styles for various heading levels to ensure visual hierarchy and consistency.
+ */
+h1 {
+    font-size: xx-large; /* Extra large font size for h1 */
+    text-transform: capitalize; /* Capitalizes each word in h1 */
+    color: #080808; /* Dark color for h1 */
+    font-weight: 800; /* Bold weight for emphasis */
+    margin-bottom: 30px; /* Spacing below the heading */
+}
+
+h2 {
+    font-size: 24px; /* Font size for h2 */
+    text-transform: uppercase; /* Uppercase transformation for h2 */
+    color: #303030; /* Slightly lighter dark gray */
+    font-weight: 600; /* Semi-bold weight */
+    margin-bottom: 30px; /* Spacing below the heading */
+}
+
+h4 {
+    font-size: 19px; /* Font size for h4 */
+    line-height: 1.375em; /* Slightly denser line height for h4 */
+    color: #303030; /* Color for h4 */
+    font-weight: 400; /* Normal weight for less emphasis */
+    margin-bottom: 30px; /* Spacing below the heading */
+}
+
+/* 
+ * Navbar Styles 
+ * Customize the appearance of the navigation bar and its elements.
+ */
+.navbar {
+    margin-bottom: 0; /* Removes default margin below the navbar */
+    background-color: #fff; /* White background for the navbar */
+    border: none; /* Removes any border */
+    font-size: 14px; /* Font size for the navbar links */
+    font-family: Montserrat, sans-serif; /* Font for the navbar links */
+    letter-spacing: 2px; /* Increased spacing between navbar letters */
+    padding: 20px; /* Uniform padding for the navbar */
+}
+
+/* 
+ * Navbar Brand (Logo and Text) 
+ * Styles for the brand logo and text inside the navbar.
+ */
+.navbar-brand {
+    display: flex; /* Flexbox for horizontal alignment */
+    align-items: center; /* Vertically centers the logo and text */
+    font-size: 80px; /* Large font size for the brand text */
+    font-weight: 800; /* Extra bold weight */
+    font-family: 'Times New Roman', Times, serif; /* Classic serif font for the brand */
+}
+
+/* 
+ * Logo inside the navbar 
+ * Ensures consistent sizing and spacing of the logo.
+ */
+.navbar-brand img {
+    max-width: 40px; /* Maximum width for the logo */
+    margin-right: 10px; /* Space between logo and text */
+}
+
+/* 
+ * Navbar links styling 
+ * Customize the appearance of links within the navbar.
+ */
+.navbar-nav li a, 
+.navbar .navbar-brand {
+    color: #070707 !important; /* Default color for navbar text */
+}
+
+/* 
+ * Hover effect for navbar links 
+ * Changes color when hovering or on active links.
+ */
+.navbar-nav li a:hover, 
+.navbar-nav li.active a {
+    color: #f4511e !important; /* Orange color on hover */
+    background-color: #fff !important; /* Keeps background white on hover */
+}
+
+/* 
+ * Hamburger icon styling 
+ * Customizes the appearance of the menu icon for mobile views.
+ */
+.navbar-toggle {
+    border-color: transparent; /* Removes border from toggle button */
+    color: #818181; /* Gray color for the toggle (hamburger) icon */
+}
+
+/* 
+ * Container styling 
+ * Ensures uniform padding within the container-fluid class.
+ */
+.container-fluid {
+    padding: 50px 20px 20px; /* Padding for top, left, and right */
+}
+
+/* 
+ * Featured Articles Section 
+ * Layout for featured articles beneath the navbar.
+ */
+.featured-articles {
+    display: flex; /* Flexbox layout for aligning articles */
+    gap: 20px; /* Space between each article */
+}
+
+/* 
+ * Styles for individual article blocks 
+ * Ensures the image and text are aligned and adds background and padding.
+ */
+.featured-content {
+    display: flex; /* Aligns image and text side by side */
+    align-items: center; /* Vertically centers content */
+    background-color: #f8f8f8; /* Light gray background for article block */
+    padding: 15px; /* Adds padding inside each block */
+    border-radius: 5px; /* Rounds the corners of the blocks */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* 
+ * Image container within articles 
+ * Ensures proper alignment and sizing of images.
+ */
+.image-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* 
+ * Featured image styling 
+ * Ensures the images fit properly within their containers without stretching.
+ */
+.featured-image {
+ 
+    max-width: 100%;
+    max-height: 100%;
+    width: 100%;
+    height: 100%;
+    float: left;
+    
+}
+
+/* 
+ * Text content inside articles 
+ * Adjusts the spacing and growth of the text relative to the image.
+ */
+.featured-text {
+    padding-left: 20px; /* Space between image and text */
+    float: right;
+    text-align: left;
+}
+
+/* 
+ * Article title styling 
+ * Removes default margins from the title.
+ */
+.featured-text h4 {
+    margin: 0;
+    font-size: 28px; /* Font size for h4 */
+    line-height: 1.375em;
+    color: rgb(255, 0, 0); /* Red color for h4 */
+    font-weight: 800;
+}
+
+.featured-text h5 {
+    margin: 0;
+    font-size: 24px; /* Font size for h5 */
+    line-height: 1.375em;
+    color: rgb(8, 8, 8); /* Black color for h5 */
+    font-weight: 800;
+}
+
+/* 
+ * Article description styling 
+ * Adds margin above the paragraph.
+ */
+.featured-text p {
+    margin: 5px 0 0;
+}
+
+/* 
+ * Read More Button Styling 
+ * Customizes the appearance of the "Read More" button.
+ */
+.read-more-text {
+    font-size: 19px;
+    text-transform: uppercase;
+    line-height: 1.375em;
+    color: #0c0c0c;
+    background-color: #f4511e;
+    border: 1px solid #f4511e;
+    font-weight: 600;
+    margin-bottom: 30px;
+    padding: 15px;
+}
+
+/* 
+ * Responsive Styles for smaller screens (up to 768px) 
+ * Adjusts layout for mobile devices.
+ */
+@media screen and (max-width: 768px) {
+    .featured-articles {
+        flex-direction: column; /* Stacks articles vertically */
+    }
+
+    .featured-content {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .image-container {
+        width: 100%;
+        height: 100%;
+    }
+
+    .featured-image {
+        max-width: 80%;
+        max-height: 80%;
+        width: auto;
+        height: auto; /* Adjusts image size automatically */
+    }
+
+    .featured-text {
+        padding-left: 20px; /* Adjust padding */
+    }
+}
+
+/* 
+ * Additional responsive styles for smaller screens (up to 768px) 
+ * Centers text and makes buttons full-width on mobile.
+ */
+@media screen and (max-width: 768px) {
+    .col-sm-4 {
+        text-align: center;
+        margin: 25px 0;
+    }
+
+    .btn-lg {
+        width: 100%;
+        margin-bottom: 35px;
+    }
+}
